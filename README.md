@@ -57,7 +57,7 @@ This calendar follows descriptions found in 1 Enoch and The Book of Jubilees in 
 The Gregorian calendar claims that a year is 365.2425 days long.
 So if the year is 364 days long the winter solstice on the Gregorian calendar would shift a day or two every year.
 
-The winter solstice seems like the easiest day to compare on both calendars, since there is some contention over if we should be using the equinoxes or equiluxes to determine spring and fall. And the world seems very set on accurately pegging down the gregorian date of the solstices, even down the the minute.
+The winter solstice seems like the easiest day to compare on both calendars, since there is some contention over if we should be using the equinoxes or equiluxes to determine spring and fall. And the world seems very set on accurately pegging down the Gregorian date of the solstices, even down the the minute.
 
 To see how the Creation Solar Calendar places the solstices, I looked at a calendar starting at the first of the year according to the previously linked video, and counted out weeks.
 So I started at March 23, 2022 and counted 13 weeks (91 days) to find the start of Summer would be June 22. 
@@ -70,11 +70,11 @@ So instead of continuing with a calendar, I decided to automate this process wit
 ## My Findings
 
 I decided to generate 50 years worth of season start dates.
-I chose 50 since that's considered a Shmita in scripture, or the year following seven jubilees.
+I chose 50 since that's considered a Shmita in scripture, or seven jubilees plus a year.
 [You can see the dates in this csv](./examples/one-shmita.csv).
 
 The winter solstice for 2022 starts fine on 12/21.
-But when we reach 2071, the winter solstice ends up two months earlier on the gregorian calendar on 10/21.
+But when we reach 2071, the winter solstice ends up two months earlier on the Gregorian calendar on 10/21.
 Each year would shift the winter solstice one day early, with leap years shifting an additional day.
 
 ### Further Questions
