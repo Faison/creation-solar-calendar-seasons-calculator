@@ -2,6 +2,7 @@
   "name": "creation-solar-calendar-seasons-calculator",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "author": "Faison Zutavern <faisonz@protonmail.com>",
   "license": "MIT"
 }

@@ -103,24 +103,17 @@ const getSeasonStringsFromStartingSpring = (num, startingSpring, separator) => {
   return getSeasonStrings(seasons, separator);
 }
 
-const printSeasonsFromSpring = (num, startingSpring) => {
+export const printSeasonsFromSpring = (num, startingSpring) => {
   const seasonStrings = getSeasonStringsFromStartingSpring(num, startingSpring, ' | ');
 
-  console.log();
   console.log(DATES_HEADER);
   seasonStrings.map((str, i) => console.log(`| ${padLeft(4, `${i + 1}`)} | ${str} |`));
-  console.log();
 }
 
-const printSeasonsFromSpringForCSV = (num, startingSpring) => {
+export const printSeasonsFromSpringForCSV = (num, startingSpring) => {
   const header = ['Spring', 'Summer', 'Fall', 'Winter'].join(',');
   const seasonStrings = getSeasonStringsFromStartingSpring(num, startingSpring, ',');
 
   console.log(header);
   seasonStrings.map((str) => console.log(str));
 }
-
-// Start with a date at noon to prevent daylight savings time from rolling back the date.
-const startingSpring = new Date('03/23/2022 12:00');
-
-printSeasonsFromSpring(50, startingSpring);
