@@ -56,7 +56,8 @@ This calendar follows descriptions found in 1 Enoch and The Book of Jubilees in 
 
 The Gregorian calendar claims that a year is 365.2425 days long.
 So if the year is 364 days long the winter solstice on the Gregorian calendar would shift a day or two every year.
-The winter solstice seems like the easiest day to compare on both calendars, since there is some contention over if we should be using the equinoxes or equiluxes to determine spring and fall.
+
+The winter solstice seems like the easiest day to compare on both calendars, since there is some contention over if we should be using the equinoxes or equiluxes to determine spring and fall. And the world seems very set on accurately pegging down the gregorian date of the solstices, even down the the minute.
 
 To see how the Creation Solar Calendar places the solstices, I looked at a calendar starting at the first of the year according to the previously linked video, and counted out weeks.
 So I started at March 23, 2022 and counted 13 weeks (91 days) to find the start of Summer would be June 22. 
@@ -65,3 +66,39 @@ And finally, I counted 13 more weeks to find that the start of Winter would be D
 
 I wrote out these days for a total of five years of dates and saw right away that the dates began to shift earlier into the year.
 So instead of continuing with a calendar, I decided to automate this process with this program.
+
+## My Findings
+
+I decided to generate 50 years worth of season start dates.
+I chose 50 since that's considered a Shmita in scripture, or the year following seven jubilees.
+[You can see the dates in this csv](./examples/one-shmita.csv).
+
+The winter solstice for 2022 starts fine on 12/21.
+But when we reach 2071, the winter solstice ends up two months earlier on the gregorian calendar on 10/21.
+Each year would shift the winter solstice one day early, with leap years shifting an additional day.
+
+### Further Questions
+
+Why does a year, as described in 1 Enoch and The Book of Jubilees, not match up with how we observe a year now?
+If a Solar, 364 day calendar was observed since the start of creation, then when did a year become longer?
+
+We know that in the time when Joshuah lead the Isrealites into the land of Caanan, God stopped the sun and moon for nearly a whole day (see Joshua 10:1-15).
+
+Additionally, in the days of Hezekiah, God caused the shadow on the sundial to go ten degrees backwards (See 2 Kings 20:1-11).
+
+Could these events be responsible for why the winter solstice is no longer spaced 364 days apart?
+Or am I missing something else that explains a year in this age being 364 instead of 365.2425?
+
+And if it now takes the sun 365.2425 days to go from solstice to solstice, would it not be easy enough to add an additional intercalary day before spring?
+It would probably have to follow the same leap year rules, but would stop the solstices from shifting throughout the years.
+But I'm just spitballing here.
+
+### A Second Intercalary Day Between Winter and Spring
+
+To give it a try, I briefly updated the code to make a Year 365 days to simulate adding a second intercalary day between winter and spring, while ignoring leap years.
+[You can see the dates with a second intercalary day in winter in this csv](./examples/one-shmita-with-extra-intercalary-day.csv).
+
+As I suspected, the date of the winter solstice shifts a day earlier every leap year.
+Additionally, this would mean that the start of each season no longer falls on the fourth day of the week.
+And perhaps that is how things are to be until God renews the heavens.
+But again, this is where we reach a point where I have less to offer in this discussion.
