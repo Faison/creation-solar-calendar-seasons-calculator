@@ -27,6 +27,7 @@ export const validateArgs = (num, startString, ...args) => {
     results.errors.push('The first argument must be a positive integer greater than 0');
   }
 
+  // Always set the time of the start date to noon, to avoid having the day roll back due to daylight savings time.
   const date = new Date(`${startString} 12:00`);
 
   if (!isValidDate(date)) {
