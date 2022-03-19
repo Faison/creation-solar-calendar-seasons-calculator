@@ -90,7 +90,8 @@ Each year would shift the winter solstice one day early, with leap years shiftin
 ### Further Questions
 
 Why does a year, as described in 1 Enoch and The Book of Jubilees, not match up with how we observe a year now?
-If a Solar, 364 day calendar was observed since the start of creation, then when did a year become longer?
+If a Solar, 364 day calendar was observed since the start of creation, then when did a year become longer by a little more than a day?
+Is a year actually longer?
 
 We know that in the time when Joshuah lead the Isrealites into the land of Caanan, God stopped the sun and moon for nearly a whole day (see Joshua 10:1-15).
 
