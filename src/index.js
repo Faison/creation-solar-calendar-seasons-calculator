@@ -4,6 +4,7 @@ const WEEK_IN_MS = 7 * DAY_IN_MS;
 const SEASON_IN_MS = 13 * WEEK_IN_MS;
 const YEAR_IN_MS = 4 * SEASON_IN_MS;
 const JUBILEE_IN_MS = 7 * YEAR_IN_MS;
+const DATES_HEADER = '|      |   Spring   |   Summer   |    Fall    |   Winter   |';
 
 const dateFormat = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'America/Chicago' });
 
@@ -57,12 +58,17 @@ const getSeasonFromSpring = (startDate) => {
  */
 const getSeasonsForSprings = (springDates) => springDates.map(getSeasonFromSpring);
 
+/**
+ * .
+ *
+ * @param {number} num - .
+ * @param {Date}   startingSpring - .
+ * @returns {Season[]} .
+ */
 const getSeasonsFromStartingSpring = (num, startingSpring) => {
   const springs = getManySprings(num, startingSpring)
   return getSeasonsForSprings(springs);
 }
-
-const DATES_HEADER = '|      |   Spring   |   Summer   |    Fall    |   Winter   |';
 
 /**
  * .
@@ -103,6 +109,12 @@ const getSeasonStringsFromStartingSpring = (num, startingSpring, separator) => {
   return getSeasonStrings(seasons, separator);
 }
 
+/**
+ * .
+ *
+ * @param {number} num - .
+ * @param {Date} startingSpring - .
+ */
 export const printSeasonsFromSpring = (num, startingSpring) => {
   const seasonStrings = getSeasonStringsFromStartingSpring(num, startingSpring, ' | ');
 
@@ -110,6 +122,12 @@ export const printSeasonsFromSpring = (num, startingSpring) => {
   seasonStrings.map((str, i) => console.log(`| ${padLeft(4, `${i + 1}`)} | ${str} |`));
 }
 
+/**
+ * .
+ *
+ * @param {number} num - .
+ * @param {Date} startingSpring - .
+ */
 export const printSeasonsFromSpringForCSV = (num, startingSpring) => {
   const header = ['Spring', 'Summer', 'Fall', 'Winter'].join(',');
   const seasonStrings = getSeasonStringsFromStartingSpring(num, startingSpring, ',');
