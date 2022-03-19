@@ -1,5 +1,10 @@
 # Creation Solar Calendar Seasons Calculator
 
+## TODO
+
+* Refactor code to group functions into separate themed files
+* Fill in jsdocs so they're more useful than telling you types
+
 ## How to use
 
 ```bash
