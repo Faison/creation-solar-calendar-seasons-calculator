@@ -39,6 +39,16 @@ node . 2 03/23/2022 --output=csv > dates.csv
 
 The resulting `dates.csv` file can be opened in Excel or an Open Source equivalent.
 
+## How this works
+
+I pass in how many years to calculate and a starting spring solstice date.
+For the examples mentioned below, I chose 50 years and March 23, 2022.
+
+I then calculate the start of spring for all the requested years, while assuming a year is 364 days.
+With each of those dates, I then calculate the start of summer, fall and winter while assuming that the start of each season is 13 weeks after the start of the previous season.
+
+Finally, I format the dates to display in a terminal or to put in a CSV.
+
 ## About the Creation Solar Calendar
 
 On March 8th, 2022, Ken Heidebrecht of Hanging On His Words put out a video describing a biblical calendar that he calls the "Creation Solar Calendar".
