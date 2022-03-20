@@ -1,4 +1,22 @@
+/**
+ * Validation functions.
+ */
+
+/**
+ * @typedef {object} ValidatedArgs
+ * @property {string} output         - The way to output the calculated dates (default|csv).
+ * @property {number} num            - The number of years to calculate.
+ * @property {Date}   startingSpring - The starting spring date object.
+ */
+
+/**
+ * @typedef {object} ValidatedArgResults
+ * @property {string[]}      errors - Any errors resulting from invalid arguments.
+ * @property {ValidatedArgs} values - The normalized arguments for this program.
+ */
+
 const VALID_OUTPUTS = ['default', 'csv'];
+
 /**
  * Checks if a date object is valid.
  *
@@ -8,12 +26,12 @@ const VALID_OUTPUTS = ['default', 'csv'];
 export const isValidDate = (d) => d instanceof Date && !isNaN(d);
 
 /**
- * .
+ * Determines if program arguments are valid, returning errors if not and normalized values if valid.
  *
- * @param {string}    num         - .
- * @param {string}    startString - .
- * @param  {string[]} args        - .
- * @returns {object} .
+ * @param {string}    num         - The number of years to calculate.
+ * @param {string}    startString - The starting date string (MM/DD/YYYY).
+ * @param  {string[]} args        - Any additional args (--output).
+ * @returns {ValidatedArgResults} The errors or normalized arguments.
  */
 export const validateArgs = (num, startString, ...args) => {
   const results = {
