@@ -80,8 +80,8 @@ So instead of continuing with a calendar, I decided to automate this process wit
 ## My Findings
 
 I decided to generate 50 years worth of season start dates.
-I chose 50 since that's considered a Shmita in scripture, or seven jubilees plus a year.
-[You can see the dates in this csv](./examples/one-shmita.csv).
+I chose 50 since that's considered a Jubilee in scripture.
+[You can see the dates in this csv](./examples/one-jubilee.csv).
 
 The winter solstice for 2022 starts fine on 12/21.
 But when we reach 2071, the winter solstice ends up two months earlier on the Gregorian calendar on 10/21.
@@ -107,7 +107,7 @@ But I'm just spitballing here.
 ### A Second Intercalary Day Between Winter and Spring
 
 To give it a try, I briefly updated the code to make a Year 365 days to simulate adding a second intercalary day between winter and spring, while ignoring leap years.
-[You can see the dates with a second intercalary day in winter in this csv](./examples/one-shmita-with-extra-intercalary-day.csv).
+[You can see the dates with a second intercalary day in winter in this csv](./examples/one-jubilee-with-extra-intercalary-day.csv).
 
 As I suspected, the date of the winter solstice shifts a day earlier every leap year.
 Additionally, this would mean that the start of each season no longer falls on the fourth day of the week.
