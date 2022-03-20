@@ -67,3 +67,14 @@ export const printSeasons = (seasons) => {
   console.log(`|      |${headerString}|`);
   seasonStrings.map((str, i) => console.log(`| ${padLeft(`${i + 1}`, 4)} | ${str} |`));
 };
+
+/**
+ * Prints the seasons in CSV format.
+ *
+ * @param {Season[]} seasons - The seasons to print to a CSV
+ */
+export const printSeasonsForCSV = (seasons) => {
+  const seasonStrings = seasons.map((season) => getSeasonString(season, ','));
+  console.log(HEADER_LABELS.join(','));
+  seasonStrings.map((str) => console.log(str));
+}

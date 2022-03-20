@@ -1,5 +1,5 @@
-import { getSeasonsFromStartingSpring, printSeasonsFromSpringForCSV } from './src/index.js';
-import { printSeasons } from './src/output.js';
+import { getSeasonsFromStartingSpring } from './src/index.js';
+import { printSeasons, printSeasonsForCSV } from './src/output.js';
 import { validateArgs } from './src/validation.js';
 
 const { errors, values } = validateArgs(...(process.argv.slice(2)));
@@ -18,6 +18,6 @@ switch (output) {
     printSeasons(seasons);
     break;
   case 'csv':
-    printSeasonsFromSpringForCSV(num, startingSpring);
+    printSeasonsForCSV(seasons);
     break;
 }
