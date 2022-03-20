@@ -1,4 +1,4 @@
-import { getSeasonsFromStartingSpring } from './src/index.js';
+import { getSeasonsFromStartingSpring } from './src/season.js';
 import { printSeasons, printSeasonsForCSV } from './src/output.js';
 import { validateArgs } from './src/validation.js';
 
